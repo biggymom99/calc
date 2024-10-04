@@ -106,8 +106,8 @@ document.addEventListener('keydown', (event) => {
     }
 });
 
-window.startGame = function() {
-    document.getElementById('calculator').style.display = 'none';  // 계산기 숨김
+startGame = function() {
+    document.getElementById('calculator-container').style.display = 'none';  // 계산기 숨김
     canvas.style.display = 'block';  // 게임 화면 표시
     gameLoop();  // 게임 시작
 }
