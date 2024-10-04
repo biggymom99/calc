@@ -117,3 +117,9 @@ body{
     width:50%;
     border-radius: 45%;
 }
+
+canvas {
+    background-color: #1d1c1c;
+    display: none;
+    margin: 0 auto;
+}
