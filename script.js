@@ -142,7 +142,7 @@ numberButtons.forEach(button => {
     button.addEventListener('click', () => {
         const number = button.getAttribute('data-num-value');
         inputSequence += number;
-
+        console.log(inputSequence)
         // '6500'이 입력되면 공룡 게임 시작
         if (inputSequence === '6500') {
             startGame();  // 공룡 게임 시작 (game.js에 정의됨)
