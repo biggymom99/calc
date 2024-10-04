@@ -1,0 +1,119 @@
+/* 모든 요소의 기본 여백 제거 */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* HTML과 Body의 기본 설정 */
+html, body {
+    height: 100%;
+
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator-container{
+    width: 375px;
+    height: 645px;
+
+    border-style:solid;
+    border-color: transparent;
+    display:flex;
+    flex-direction: column;
+
+    padding:10px;
+    background-image: url(/realcalc.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.topbtn{
+    display: flex;
+    flex-direction: row;
+}
+.redbtn{
+    width: 12px;
+    height:12px;
+    border-radius: 50%;
+    background-color: rgb(255, 83, 83);
+    margin-right: 5px;
+}
+.redbtn:hover{
+    cursor:grab;
+    
+}
+.yellowbtn{
+    width:12px;
+    height:12px;
+    border-radius: 50%;
+    background-color: rgb(248, 248, 83);
+    margin-right: 5px;
+}
+.yellowbtn:hover{
+    cursor:grab;
+}
+.greenbtn{
+    width:12px;
+    height:12px;
+    border-radius: 50%;
+    background-color: rgb(83, 247, 83);
+    margin-right: 300px;
+}
+.greenbtn:hover{
+    cursor:grab;
+}
+.blackbtn{
+    width:12px;
+    height:12px;
+    border-radius: 50%;
+    background-color: rgb(33, 33, 33);
+}
+.blackbtn:hover{
+    cursor:grab;
+}
+.display{
+    
+    width: 100%;
+    height : 180px;
+    color:white;
+    padding-top :60px;
+    padding-bottom: 30px;
+    font-size: 100px;
+    text-align: right;
+}
+
+.buttons{
+    display: none;
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    height : 470px ;
+    flex-wrap :wrap;
+
+}
+
+.function{
+    width:25%;
+}
+.button{
+    width: 25%;
+    
+    height: 20%;
+    border-radius: 50%;
+    border-color:transparent;
+    background-color:transparent;
+    color:transparent;
+    cursor:pointer;
+    
+}
+.operator{
+    width:25%; 
+}
+.zero{
+    width:50%;
+    border-radius: 45%;
+}
